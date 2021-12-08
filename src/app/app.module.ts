@@ -1,24 +1,37 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { AboutComponent } from './components/landing/home-components/about/about.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { HeaderComponent } from './components/landing/home-components/header/header.component';
+import { TasksComponent } from './components/landing/home-components/tasks/tasks.component';
+import { ExperienceComponent } from './components/landing/home-components/experience/experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
+    routingComponents,
+    NavbarComponent,
     FooterComponent,
-    routingComponents
+    HeaderComponent,
+    AboutComponent,
+    TasksComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FontAwesomeModule,
+    CollapseModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })

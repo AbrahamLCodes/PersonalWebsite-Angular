@@ -1,0 +1,806 @@
+/*********** Navbar ************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+:root {
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-hover-red: #f33501
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: whitesmoke;
+}
+
+nav {
+  z-index: 2;
+}
+
+h3 {
+  color: #17a2b8;
+  font-weight: bold;
+}
+
+
+/********** Navbar **********/
+nav a.nav-link {
+  font-weight: 300;
+  letter-spacing: 0.0375px;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav>li>a {
+  margin-right: 0.75rem;
+  margin-left: 00.75rem;
+  color: white !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.logo {
+  width: 5.25rem;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.navbar-brand {
+  max-width: 17.25rem !important;
+  padding: 0 !important;
+  height: 8rem !important;
+}
+
+.navbar-brand h4 {
+  color: whitesmoke !important;
+  font-weight: normal !important;
+  padding-top: 0 !important;
+}
+
+.navbar-nav>li>a.active,
+.navbar-nav>li>a.active:focus {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+.navbar-nav>li>a:hover {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+.language-flag {
+  width: 3rem;
+}
+
+/********** Header **********/
+.header-wraper {
+  position: relative;
+  background: url(../assets/images/compumedianegra.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-info h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 2rem;
+}
+
+/******* TYPED TEXT *******/
+.typed-text {
+  font-size: 2rem;
+  color: white;
+}
+
+/******* HEADER MAIN OFFER BUTTON *******/
+.btn-main-offer {
+  border: 1px solid var(--primary-hover-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.8rem;
+  color: white;
+  margin: 1rem;
+  z-index: 2;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: white;
+  transition: .2s ease-in-out;
+}
+
+/******* PARTICLES *******/
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 95.5vh !important;
+  width: 100vw !important;
+  z-index: 1;
+}
+
+/******* ABOUT *******/
+.about {
+  margin: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.logo-about {
+  width: 15.25rem;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.name-about {
+  margin: 10px;
+  font-weight: bold;
+  text-align: center !important;
+  font-size: 25px;
+}
+
+/********** SERVICES **********/
+.services {
+  background-color: rgb(243, 238, 238);
+  padding: 10px;
+}
+
+.services h2 {
+  font-weight: 500;
+  text-align: center;
+  margin: 20px;
+}
+
+.card {
+  border: 1px solid #000;
+  margin: 10px auto;
+  /* Added */
+  float: none;
+  /* Added */
+  margin-bottom: 10px;
+  /* Added */
+}
+
+.card-title {
+  font-size: medium;
+}
+
+.card-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: small;
+}
+
+.card-image {
+  width: 4rem !important;
+  align-self: center;
+  padding-top: 10px;
+  position: relative;
+}
+
+/********** EXPERIENCE **********/
+.experience {
+  padding: 10px;
+}
+
+.experience h2 {
+  font-weight: 500;
+  text-align: center;
+  margin: 20px;
+}
+
+.experience p {
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.experience hr {
+  border-top-style: dotted;
+  border-color: lightgray;
+  width: 50%;
+  border-width: 6px;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.landscape-img {
+  max-width: 100%;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 3rem;
+}
+
+.portrait-img {
+  max-width: 50%;
+  margin-bottom: 1rem;
+}
+
+.potrait-img-sm {
+  width: 70%;
+}
+
+.experience-button-right {
+  float: right;
+  bottom: 0px;
+}
+
+.experience-button {
+  margin: 10px;
+  margin-left: 60%;
+}
+
+.col-text {
+  text-align: justify !important;
+}
+
+.experience-article {
+  margin-top: 3rem;
+}
+
+.experience li {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/********** FOOTER **********/
+.footer-dark {
+  margin-top: 0;
+  padding: 50px 0;
+  color: #f0f9ff;
+  background-color: #282d32;
+}
+
+.footer-dark h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+}
+
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-dark p {
+  text-align: left !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  margin: 0 !important;
+}
+
+.footer-dark ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity: 0.8;
+}
+
+.footer-dark .item.text {
+  margin-bottom: 36px;
+}
+
+.footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+.footer-dark .item.social>a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-dark .item.social>a:hover {
+  opacity: 0.9;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.serviciopage .footer-dark {
+  margin-top: 0;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .footer-dark p {
+    text-align: center !important;
+  }
+
+  .footer-dark h3 {
+    text-align: center;
+  }
+}
+
+/********** MOBILEDESKTOP **********/
+
+.mobile-desktop {
+  background-color: whitesmoke;
+  height: 100%;
+  width: 100%;
+}
+
+.mobile-desktop h2,
+h3 {
+  text-align: center;
+  padding: 1rem;
+  color: #17a2b8;
+  padding-top: 3rem;
+}
+
+.mobile-desktop h4 {
+  text-align: center;
+  padding: 1rem;
+  color: #17a2b8;
+}
+
+.mobile-desktop p {
+  text-align: center;
+  margin: 1rem;
+  font-size: large;
+}
+
+.carousel-inner p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 120% !important;
+  margin-bottom: 4rem !important;
+}
+
+.carousel-mobile {}
+
+.carousel-so {}
+
+.carousel-main-imgs-container {
+  margin-top: 3rem;
+}
+
+.carousel-item-mainimg {
+  width: 10%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.carousel-item-mainimgs {
+  width: 20.8%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.carousel-item-secondaryimgs {
+  width: 14.7%;
+  margin: 1rem;
+}
+
+.carousel-item-secondaryimg {
+  width: 7.06%;
+  margin: 1rem;
+}
+
+.carousel-container {
+  background-color: #424642;
+}
+
+.carousel-item p {
+  color: #f0f9ff;
+}
+
+.mobile-desktop .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.carousel-so .carousel-item-secondaryimgs {
+  width: 13%;
+  margin: 1rem;
+}
+
+.carousel-gnu-imgs {
+  width: 8.3%;
+  margin: 1rem;
+}
+
+.mobile-desktop .footer-dark {
+  margin-top: 0;
+}
+
+/********** BASESARQUI **********/
+
+.bases-arqui {
+  background-color: whitesmoke;
+  height: 100%;
+  width: 100%;
+}
+
+.bases-arqui .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.bases-arqui h2,
+h3 {
+  text-align: center;
+  padding: 1rem;
+  color: #17a2b8;
+  padding-top: 3rem;
+}
+
+.bases-arqui h4 {
+  text-align: center;
+  padding: 1rem;
+  color: #17a2b8;
+}
+
+.bases-arqui p {
+  text-align: center;
+  margin: 1rem;
+  font-size: large;
+}
+
+
+.carousel-arqui {
+  height: 40vh;
+}
+
+.carousel-arqui p {
+  font-size: 100%;
+}
+
+.bases-arqui .carousel-item-secondaryimgs {
+  width: 50.7%;
+  margin: 1rem;
+  margin-top: 3rem;
+}
+
+.bases-arqui .carousel-item-secondaryimg {
+  width: 35.5%;
+  margin: 1rem;
+  margin-top: 3rem;
+}
+
+.white-background {
+  background: whitesmoke;
+  padding: 1rem;
+}
+
+
+.carousel-arqui h3 {
+  color: whitesmoke;
+}
+
+.bases-arqui .footer-dark {
+  margin-top: 0;
+}
+
+/********** DESARROLLOWEB **********/
+
+.desarrolloweb {
+  background-color: whitesmoke;
+  height: 100%;
+  width: 100%;
+}
+
+.desarrolloweb .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.desarrolloweb h2,
+h3 {
+  text-align: center;
+  padding: 1rem;
+  color: #17a2b8;
+  padding-top: 3rem;
+}
+
+.desarrolloweb h4 {
+  text-align: center;
+  padding: 1rem;
+  color: #17a2b8;
+}
+
+.desarrolloweb p {
+  text-align: center;
+  margin: 1rem;
+  font-size: large;
+}
+
+.desarrolloweb .carousel-item-mainimgs {
+  width: 15.8%;
+  margin: 1rem !important;
+  align-self: center;
+}
+
+.desarrolloweb .footer-dark {
+  margin-top: 0;
+}
+
+.desarrolloweb .white-background {
+  background: #fff;
+  width: 30%;
+  padding: 1rem;
+}
+
+/********** SOPORTE **********/
+
+.soporte {
+  background-color: whitesmoke;
+  height: 100%;
+  width: 100%;
+}
+
+.soporte .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.soporte h2,
+h3 {
+  text-align: center;
+  padding: 1rem;
+  color: #17a2b8;
+  padding-top: 3rem;
+}
+
+.soporte h4 {
+  text-align: center;
+  padding: 1rem;
+  color: #17a2b8;
+}
+
+.soporte p {
+  text-align: center;
+  margin: auto;
+  font-size: large;
+}
+
+.soporte ul {
+  margin: auto;
+  width: 50%;
+  margin-bottom: 4rem;
+  font-size: 120%;
+}
+
+.soporte li {
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+}
+
+.carousel-red p {
+  margin: auto;
+  width: 90%;
+  text-align: left;
+  font-size: 120%;
+  margin-bottom: 1rem !important;
+}
+
+.carousel-red ul {
+  margin-bottom: 4rem;
+  font-size: 120%;
+}
+
+/********** OTROS **********/
+
+.otros {
+  background-color: whitesmoke;
+  height: 100%;
+  width: 100%;
+}
+
+.otros .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.otros h2,
+h3 {
+  text-align: center;
+  padding: 1rem;
+  color: #17a2b8;
+  padding-top: 3rem;
+}
+
+.otros h4 {
+  text-align: center;
+  padding: 1rem;
+  color: #17a2b8;
+}
+
+.otros p {
+  margin: 1rem;
+  margin-bottom: 0;
+  font-size: large;
+}
+
+.otros .carousel-item-mainimg {
+  width: 20%;
+}
+
+@supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
+  #text {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    /* A día de hoy aún es necesario el prefijo para soportar a Safari */
+    hyphens: auto;
+  }
+}
+
+@media(max-width : 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+
+  .main-info h1 {
+    font-size: 1.5rem !important
+  }
+
+  .typed-text {
+    font-size: 1rem;
+    color: white;
+  }
+
+  .particles-canvas {
+    display: none;
+  }
+
+  .about-description {
+    margin-top: 2rem;
+  }
+
+  /********** ABOUT **********/
+
+  .about p {
+    text-align: justify;
+  }
+
+
+  /********** SERVICES **********/
+
+  .card-props {
+    width: 10rem;
+    margin: 6px;
+    border: 1px solid #000;
+  }
+
+  .card-title {
+    font-size: small;
+  }
+
+  .card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: smaller;
+  }
+
+  .card-image {
+    width: 2rem !important;
+    align-self: center;
+    padding-top: 2px;
+    position: relative;
+  }
+
+  /********** Experience **********/
+  .lower-row {
+    padding-top: 3rem;
+  }
+
+  /********** MobileDesktop **********/
+
+  .carousel-inner p {
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: small;
+  }
+
+  .carousel-so .carousel-item-secondaryimgs {
+    width: 40%;
+    margin: 1rem;
+  }
+
+  .carousel-gnu-imgs {
+    width: 20.3%;
+    margin: 1rem;
+  }
+
+  /********** BASESARQUI **********/
+
+  .bases-arqui .carousel-item-secondaryimgs {
+    width: 80.7%;
+    margin: 1rem;
+    margin-top: 3rem;
+  }
+
+  /********** SOPORTE **********/
+  .soporte ul {
+    margin: auto;
+    width: 80%;
+  }
+
+  .soporte li {
+    font-size: small;
+  }
+
+  .soporte p {
+    width: 70%;
+    margin: auto;
+  }
+
+  .carousel-soporte {
+    height: 28rem;
+  }
+
+  .carousel-red p {
+    margin-bottom: 0 !important;
+  }
+
+  .carousel-red {
+    height: 34rem;
+  }
+
+  /********** OTHERS **********/
+  .otros .carousel-item-mainimg {
+    width: 40%;
+  }
+
+}

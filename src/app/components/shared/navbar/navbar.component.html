@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img class="logo" src="../../../assets/images/profileultimate.png" alt="Logo..." />
+        <h4>Abraham Luna Cázares</h4>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        (click)="isCollapsed = !isCollapsed"
+        [attr.aria-expanded]="!isCollapsed" 
+        aria-controls="navbarSupportedContent"
+        aria-label="Toggle navigation">
+        <fa-icon style="color:white;" [icon]="faBars"></fa-icon>
+      </button>
+      
+      <div [collapse]="isCollapsed" [isAnimated]="true" class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/#header">
+              Inicio <span className="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#about">Acerca de mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#services">¿Qué puedo hacer?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#experience">Mi experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contácto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="d-flex">
+      <a class="nav-link" href="/">
+        <img class="language-flag" src="../../../assets/svg/mexicoflag.svg" alt="mexico"/>
+      </a>
+      <a class="nav-link" href="/home-en">
+        <img class="language-flag" src="../../../assets/svg/usflag.svg" alt="mexico"/>
+      </a>
+    </div>
+  </div>
+</nav>
