@@ -12,6 +12,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { HeaderComponent } from './components/landing/home-components/header/header.component';
 import { TasksComponent } from './components/landing/home-components/tasks/tasks.component';
 import { ExperienceComponent } from './components/landing/home-components/experience/experience.component';
+import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ExperienceComponent } from './components/landing/home-components/experi
     AppRoutingModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
-    CollapseModule
+    CollapseModule,
+    AngularTypewriterEffectModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],

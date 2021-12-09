@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  public list: string[] = ["Apps iOS, Android y PWA", "Sistemas Web, Windos, MacOS y GNU" ,"Sistemas distribuidos en la nube y/o locales"];
+
   constructor() { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
   }
 
 }
