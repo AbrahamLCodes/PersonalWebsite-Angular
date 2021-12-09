@@ -704,16 +704,18 @@ h3 {
     display: none;
   }
 
+  /********** ABOUT **********/
+  .about {
+    margin: auto;
+  }
+
   .about-description {
     margin-top: 2rem;
   }
 
-  /********** ABOUT **********/
-
   .about p {
     text-align: justify;
   }
-
 
   /********** SERVICES **********/
 
