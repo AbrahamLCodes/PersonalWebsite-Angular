@@ -197,6 +197,19 @@ nav ul li {
   position: relative;
 }
 
+.card-lordicon {
+  width: 100px !important;
+  height: 100px !important;
+  align-self: center;
+  padding-top: 10px;
+  position: relative;
+}
+
+.lord-icon-task{
+  width: 100px !important;
+  height: 100px !important;
+}
+
 /********** EXPERIENCE **********/
 .experience {
   padding: 10px;
