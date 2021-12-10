@@ -13,6 +13,10 @@ import { HeaderComponent } from './components/landing/home-components/header/hea
 import { TasksComponent } from './components/landing/home-components/tasks/tasks.component';
 import { ExperienceComponent } from './components/landing/home-components/experience/experience.component';
 import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
+import { LandingPortfolioComponent } from './components/portfolio/landing-portfolio/landing-portfolio.component';
+import { CountdownTimerComponent } from './components/portfolio/10-js-projects/countdown-timer/countdown-timer.component';
+import { NotesAppComponent } from './components/portfolio/10-js-projects/notes-app/notes-app.component';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,10 @@ import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
     HeaderComponent,
     AboutComponent,
     TasksComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    LandingPortfolioComponent,
+    CountdownTimerComponent,
+    NotesAppComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +38,8 @@ import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
     BrowserAnimationsModule,
     FontAwesomeModule,
     CollapseModule,
-    AngularTypewriterEffectModule
+    AngularTypewriterEffectModule,
+    BsDropdownModule.forRoot()
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
