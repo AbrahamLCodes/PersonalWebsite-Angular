@@ -97,10 +97,10 @@ nav ul li {
   align-items: center;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
 .main-info h1 {
-  color: white;
   text-transform: uppercase;
   font-weight: bold;
   margin: 2rem;
@@ -144,6 +144,7 @@ nav ul li {
   margin: 3rem;
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 
 .logo-about {
