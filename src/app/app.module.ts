@@ -17,6 +17,7 @@ import { LandingPortfolioComponent } from './components/portfolio/landing-portfo
 import { CountdownTimerComponent } from './components/portfolio/10-js-projects/countdown-timer/countdown-timer.component';
 import { NotesAppComponent } from './components/portfolio/10-js-projects/notes-app/notes-app.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { StacksComponent } from './components/landing/home-components/stacks/stacks.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     ExperienceComponent,
     LandingPortfolioComponent,
     CountdownTimerComponent,
-    NotesAppComponent
+    NotesAppComponent,
+    StacksComponent
   ],
   imports: [
     BrowserModule,

@@ -367,6 +367,14 @@ nav ul li {
   color: white;
 }
 
+/********** Stacks **********/
+.stack-img {
+  max-width: 80px;
+  max-height: 80px;
+  margin: 20px;
+}
+
+
 @media (max-width:991px) {
   .footer-dark .item.social {
     text-align: center;
@@ -731,8 +739,10 @@ h3 {
     margin-top: 2rem;
   }
 
-  .about p {
-    text-align: justify;
+  .stack-img {
+    max-width: 40px;
+    max-height: 40px;
+    margin: 10px;
   }
 
   /********** SERVICES **********/
