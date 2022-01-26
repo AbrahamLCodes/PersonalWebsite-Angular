@@ -129,9 +129,10 @@ nav ul li {
 
 .btn-main-offer:hover {
   text-decoration: none;
-  background-color: var(--primary-hover-red);
+  background-color: red;
   color: white;
-  transition: .2s ease-in-out;
+  font-weight: bold;
+  transition: .1s ease-in-out;
 }
 
 /******* PARTICLES *******/

@@ -3,10 +3,10 @@
     <div class="container-fluid d-flex justify-content-around">
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
             
-            <div *ngFor="let task of lang.services.tasks" class="col mb-4 d-flex align-items-stretch">
+            <div class="col mb-4 d-flex align-items-stretch">
                 <div class="card text-center border-dark">
                     <lord-icon
-                        [src]="task.iconurl"
+                        src="https://cdn.lordicon.com/jqeuwnmb.json"
                         trigger="loop"
                         colors="primary:#343a40,secondary:#17a2b8"
                         stroke="100"
@@ -15,9 +15,49 @@
                     <!-- <img src="../../../assets/images/gadget.png" class="card-img-top card-image" alt="WebIcon" /> -->
                     
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">{{ task.title }}</h5>
+                        <h5 class="card-title">{{ lang.services.tasks[0].title }}</h5>
                         <p class="card-text">
-                            {{ task.description }}
+                            {{ lang.services.tasks[0].description }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-4 d-flex align-items-stretch">
+                <div class="card text-center border-dark">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/gqzfzudq.json"
+                        trigger="loop"
+                        colors="primary:#343a40,secondary:#17a2b8"
+                        stroke="100"
+                        class="card-lordicon">
+                    </lord-icon>
+                    <!-- <img src="../../../assets/images/gadget.png" class="card-img-top card-image" alt="WebIcon" /> -->
+                    
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">{{ lang.services.tasks[1].title }}</h5>
+                        <p class="card-text">
+                            {{ lang.services.tasks[1].description }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-4 d-flex align-items-stretch">
+                <div class="card text-center border-dark">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/qghrdngw.json"
+                        trigger="loop"
+                        colors="primary:#343a40,secondary:#17a2b8"
+                        stroke="100"
+                        class="card-lordicon">
+                    </lord-icon>
+                    <!-- <img src="../../../assets/images/gadget.png" class="card-img-top card-image" alt="WebIcon" /> -->
+                    
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">{{ lang.services.tasks[2].title }}</h5>
+                        <p class="card-text">
+                            {{ lang.services.tasks[2].description }}
                         </p>
                     </div>
                 </div>
