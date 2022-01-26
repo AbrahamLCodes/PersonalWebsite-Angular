@@ -13,12 +13,15 @@ export class FooterComponent implements OnInit {
   public faGithub = faGithub;
   public faInstagram = faInstagram;
 
-  public languageEs: any;
+  public lang: any;
 
   constructor(
     public language: LanguageService
   ) {
-    this.languageEs = language.es;
+    this.lang = language.es;
+    language.lang.subscribe(value => {
+      this.lang = value;
+    })
   }
 
   ngOnInit(): void {

@@ -2,17 +2,17 @@
     <div>
         <p style="text-align: center; margin: 10%">
             <strong>
-                {{ languagEs.stacks.label1 }}
+                {{ lang.stacks.label1 }}
             </strong>
         </p>
         <div>
-            <h2 style="text-align: center;">Mi Stack de tecnologías Web</h2>
+            <h2 style="text-align: center;">{{ lang.stacks.frontendlabel }}</h2>
             <div class="" style="margin-top: 100px;">
                 <div class="d-flex align-items-center justify-content-center">
                     <h4 style="text-align: center;">Front-end</h4>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <div *ngFor="let item of languagEs.stacks.frontend">
+                    <div *ngFor="let item of lang.stacks.frontend">
                         <img class="stack-img" [src]="item.image">
                         <p style="text-align: center;">{{item.label}}</p>
                     </div>
@@ -24,7 +24,7 @@
                 </div>
                 
                 <div class="d-flex justify-content-center">
-                    <div *ngFor="let item of languagEs.stacks.backend">
+                    <div *ngFor="let item of lang.stacks.backend">
                         <img class="stack-img" [src]="item.image">
                         <p style="text-align: center;">{{ item.label }}</p>
                     </div>
@@ -32,10 +32,10 @@
             </div>
             <div class="">
                 <div class="d-flex align-items-center justify-content-center">
-                    <h4 style="text-align: center;">Servidores</h4>
+                    <h4 style="text-align: center;">{{ lang.stacks.serverslabel }}</h4>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <div *ngFor="let item of languagEs.stacks.servers">
+                    <div *ngFor="let item of lang.stacks.servers">
                         <img class="stack-img" [src]="item.image">
                         <p style="text-align: center;">{{ item.label }}</p>
                     </div>
@@ -44,13 +44,13 @@
         </div>
         
         <div style="margin-top: 100px;">
-            <h2 style="text-align: center;">{{ languagEs.stacks.mobilelabel }}</h2>
+            <h2 style="text-align: center;">{{ lang.stacks.mobilelabel }}</h2>
             <div class="" style="margin-top: 100px;">
                 <div class="d-flex align-items-center justify-content-center">
                     <h4 style="text-align: center;">Android</h4>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <div *ngFor="let item of languagEs.stacks.android">
+                    <div *ngFor="let item of lang.stacks.android">
                         <img class="stack-img" [src]="item.image">
                         <p style="text-align: center;">{{ item.label }}</p>
                     </div>
@@ -62,7 +62,7 @@
                 </div>
                 
                 <div class="d-flex justify-content-center">
-                    <div *ngFor="let item of languagEs.stacks.ios">
+                    <div *ngFor="let item of lang.stacks.ios">
                         <img class="stack-img" [src]="item.image">
                         <p style="text-align: center;">{{ item.label }}</p>
                     </div>
@@ -70,10 +70,10 @@
             </div>
             <div class="">
                 <div class="d-flex align-items-center justify-content-center">
-                    <h4 style="text-align: center;">{{ languagEs.stacks.hibridlabel }}</h4>
+                    <h4 style="text-align: center;">{{ lang.stacks.hibridlabel }}</h4>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <div *ngFor="let item of languagEs.stacks.hibryd">
+                    <div *ngFor="let item of lang.stacks.hibryd">
                         <img class="stack-img" [src]="item.image">
                         <p style="text-align: center;">{{ item.label }}</p>
                     </div>

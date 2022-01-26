@@ -8,18 +8,15 @@ import { LanguageService } from 'src/app/components/shared/services/language.ser
 })
 export class HeaderComponent implements OnInit {
 
-  public list: string[] = [
-    "Apps iOS, Android y PWA", 
-    "Páginas y Sistemas Web",
-    "Bases de datos y servidores"
-  ];
-
-  public languageEs: any;
+  public lang: any;
 
   constructor(
     private language: LanguageService
   ) { 
-    this.languageEs = language.es;  
+    this.lang = language.languageSelected;
+     language.lang.subscribe(value => {
+       this.lang = value;
+     })
   }
 
   public ngOnInit(): void {

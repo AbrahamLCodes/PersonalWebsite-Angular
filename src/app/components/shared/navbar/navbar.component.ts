@@ -11,16 +11,26 @@ export class NavbarComponent implements OnInit {
 
   public faBars = faBars;
   public isCollapsed: boolean = true;
-  public languageEs: any;
-  public languageEn: any
+  public lang: any;
 
   constructor(
     private language: LanguageService
   ) {
-    this.languageEs = language.es;
+    this.lang = this.language.languageSelected;
+    this.language.lang.subscribe(value => {
+      this.lang = value;
+    })
   }
 
   ngOnInit(): void {
+  }
+
+  public selectEs(): void {
+    this.language.selectEs();
+  }
+
+  public selectEn(): void {
+    this.language.selectEn();
   }
 
   public scrollTo(id: string): void {

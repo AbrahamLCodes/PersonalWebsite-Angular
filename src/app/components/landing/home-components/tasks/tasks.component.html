@@ -1,9 +1,9 @@
 <div [id]="'HACER'" class="services" id="services">
-    <h2>{{ languageEs.services.title }}</h2>
+    <h2>{{ lang.services.title }}</h2>
     <div class="container-fluid d-flex justify-content-around">
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
             
-            <div *ngFor="let task of languageEs.services.tasks" class="col mb-4 d-flex align-items-stretch">
+            <div *ngFor="let task of lang.services.tasks" class="col mb-4 d-flex align-items-stretch">
                 <div class="card text-center border-dark">
                     <lord-icon
                         [src]="task.iconurl"

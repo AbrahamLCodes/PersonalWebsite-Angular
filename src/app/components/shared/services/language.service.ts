@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LanguageService {
-  constructor() { }
-
+  
   public es = {
     navbar: {
       items: [
@@ -90,6 +90,7 @@ export class LanguageService {
     },
     stacks: {
       label1: "Cuento con un amplio conocimiento en diversas tecnologías que me permiten trabajar en diversos ambientes. Echale un vistazo a los Stacks que manejo en cada una de las áreas",
+      frontendlabel: "Mi Stack de Tecnologías Web",
       frontend: [
         {
           image: "../../../../../assets/images/angular-logo.png",
@@ -122,6 +123,7 @@ export class LanguageService {
           label: "MySQL"
         }
       ],
+      serverslabel: "Servidores",
       servers: [
         {
           image: "../../../../../assets/images/nginx-logo.png",
@@ -190,4 +192,211 @@ export class LanguageService {
       ]
     }
   }
+
+  public en = {
+    navbar: {
+      items: [
+        {
+          label: "Home",
+          scrollTo: "INICIO"
+        },
+        {
+          label: "About",
+          scrollTo: "ABOUT"
+        },
+        {
+          label: "What can i do?",
+          scrollTo: "INICIO"
+        },
+        {
+          label: "Portfolio",
+          scrollTo: "PORTAFOLIO"
+        },
+        {
+          label: "Stacks",
+          scrollTo: "STACKS"
+        },
+      ]
+    },
+    footer: {
+      contactLabel: "Contact me",
+      list: [
+        {
+          label: "Email:",
+          value: "abraham11999@hotmail.com"
+        },
+        {
+          label: "Phone:",
+          value: "(614)599-60-26"
+        },
+      ]
+    },
+    header: {
+      title: "Hey There! I'm Abraham Luna 👋",
+      message: "Full-Stack Web y Móvil Developer",
+      particles: ["iOS, Android & PWA Apps", "Web pages & web systems", "Databases & Servers"],
+      button: "Download mi CV"
+    },
+    about: {
+      title: "About me",
+      message1: "Full-Stack developer specializing in application development for mobile devices 📱 Computer Engineering graduated from the Technological Institute of Chihuahua II 👨🏼‍🎓",
+      message2: "I have communication skills, time control, work under pressure, customer service/support, versatility and organization to collaborate on small or large-scale modular projects; Self-taught, adaptable to changes and technologies with which you have to work. I recognize the evolution, demand and discipline that the global industry requires, so I want my knowledge to be an asset for your company."
+    },
+    services: {
+      title: "What can i do?",
+      tasks: [
+        {
+          title: "Cross-platform mobile development",
+          description: "Specialist in this area. I can develop or collaborate in the development of custom applications for Android, iOS and PWA (Apps that are installed in the web browser).",
+          iconurl: "https://cdn.lordicon.com/jqeuwnmb.json"
+        },
+        {
+          title: "Web Pages and Systems",
+          description: "From a simple informative page to a robust distributed system, I can develop or collaborate in the development of web tools that solve a problem or satisfy a need.",
+          iconurl: "https://cdn.lordicon.com/gqzfzudq.json"
+        },
+        {
+          title: "Cloud or local infrastructure",
+          description: "It doesn't matter if the solution requires local or cloud infrastructure, I have the knowledge and experience to work in both environments.",
+          iconurl: "https://cdn.lordicon.com/qghrdngw.json"
+        }
+      ]
+    },
+    portfolio: {
+      title: "Portfolio",
+      links: [
+        {
+          label: "Click me to go to my Play Store Apps",
+          link: "https://play.google.com/store/apps/developer?id=Software+Tizona"
+        },
+        {
+          label: "Click me to see my GitHub",
+          link: "https://github.com/AbrahamLCodes"
+        }
+      ]
+    },
+    stacks: {
+      label1: "I have extensive knowledge in many technologies that allow me to work in different environments. Take a look at the Stacks that I manage in each of the areas",
+      frontendlabel: "My Web Technologies Stack",
+      frontend: [
+        {
+          image: "../../../../../assets/images/angular-logo.png",
+          label: "Angular"
+        },
+        {
+          image:"../../../../../assets/images/ngrx-logo.svg",
+          label: "NgRx"
+        },
+        {
+          image:"../../../../../assets/images/bootstrap-logo.svg",
+          label: "Bootstrap"
+        },
+        {
+          image:"../../../../../assets/images/ts-logo.png",
+          label: "TypeScript"
+        }
+      ],
+      backend: [
+        {
+          image: "../../../../../assets/images/node-logo.png",
+          label: "NodeJS"
+        },
+        {
+          image: "../../../../../assets/images/sequilize-logo.png",
+          label: "Sequilize"
+        },
+        {
+          image: "../../../../../assets/images/mysql-logo.png",
+          label: "MySQL"
+        }
+      ],
+      serverslabel: "Servers",
+      servers: [
+        {
+          image: "../../../../../assets/images/nginx-logo.png",
+          label: "NGINX"
+        },
+        {
+          image: "../../../../../assets/images/nginxproxy-logo.png",
+          label: "Proxy Manager"
+        },
+        {
+          image: "../../../../../assets/images/debian-logo.png",
+          label: "Debian"
+        },
+        {
+          image: "../../../../../assets/images/docker-logo.png",
+          label: "Docker"
+        }
+      ],
+      mobilelabel: "My Mobile Technologies Stack",
+      android: [
+        {
+          image: "../../../../../assets/images/kotlin-logo.png",
+          label: "Kotlin"
+        },
+        {
+          image: "../../../../../assets/images/java-logo.png",
+          label: "Java"
+        },
+        {
+          image: "../../../../../assets/images/as-logo.png",
+          label: "Android Studio"
+        }
+      ],
+      ios: [
+        {
+          image: "../../../../../assets/images/swift-logo.png",
+          label: "Swift"
+        },
+        {
+          image: "../../../../../assets/images/swiftui-logo.png",
+          label: "SwiftUI"
+        },
+        {
+          image: "../../../../../assets/images/xcode-logo.png",
+          label: "XCode"
+        }
+      ],
+      hibridlabel: "Hybrid",
+      hibryd: [
+        {
+          image: "../../../../../assets/images/angular-logo.png",
+          label: "Angular"
+        },
+        {
+          image: "../../../../../assets/images/ngrx-logo.svg",
+          label: "NgRx"
+        },
+        {
+          image: "../../../../../assets/images/ionic-logo.png",
+          label: "Ionic"
+        },
+        {
+          image: "../../../../../assets/images/capacitor.png",
+          label: "Capacitor"
+        }
+      ]
+    }
+  }
+
+  public languageSelected: any = this.es;
+  public lang: Subject<any> = new Subject<any>();
+  
+  constructor() { 
+    this.lang.subscribe(value => {
+      this.languageSelected = value;
+    })
+  }
+
+  public selectEn(){
+    this.lang.next(this.en);
+  }
+
+  public selectEs(){
+    this.lang.next(this.es)
+  }
+
+  
+
 }

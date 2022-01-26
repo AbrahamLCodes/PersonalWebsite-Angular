@@ -8,12 +8,15 @@ import { LanguageService } from 'src/app/components/shared/services/language.ser
 })
 export class StacksComponent implements OnInit {
 
-  public languagEs: any;
+  public lang: any;
 
   constructor(
     private language: LanguageService
   ) {
-    this.languagEs = language.es;
+    this.lang = language.es;
+    language.lang.subscribe(value => {
+      this.lang = value;
+    })
   }
 
   ngOnInit(): void {

@@ -10,12 +10,15 @@ import { LanguageService } from 'src/app/components/shared/services/language.ser
 export class ExperienceComponent implements OnInit {
 
   public faPlayCircle = faPlayCircle;
-  public languageEs: any;
+  public lang: any;
 
   constructor(
     private language: LanguageService
-  ) { 
-    this.languageEs = language.es;
+  ) {
+    this.lang = this.language.es;
+    language.lang.subscribe(value => {
+      this.lang = value;
+    })
   }
 
   ngOnInit(): void {
