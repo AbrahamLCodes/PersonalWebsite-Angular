@@ -18,6 +18,7 @@ import { CountdownTimerComponent } from './components/portfolio/10-js-projects/c
 import { NotesAppComponent } from './components/portfolio/10-js-projects/notes-app/notes-app.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { StacksComponent } from './components/landing/home-components/stacks/stacks.component';
+import { BsModalService, ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -41,10 +42,11 @@ import { StacksComponent } from './components/landing/home-components/stacks/sta
     FontAwesomeModule,
     CollapseModule,
     AngularTypewriterEffectModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    ModalModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [],
+  providers: [BsModalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

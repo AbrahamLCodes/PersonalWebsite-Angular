@@ -1,9 +1,26 @@
 <div [id]="'INICIO'" class="header-wraper" id="header">
     <div class="main-info">
-        <img class="logo-about" src="../../../assets/images/profileultimate.png" alt="Logo..."/> 
+        <img class="logo-about" src="../../../assets/images/profileultimate.png" alt="Logo..." />
         <p>{{ lang.header.title }}</p>
         <h2><strong>{{ lang.header.message }}</strong></h2>
         <ngtypewriter class="typed-text" [StringList]='lang.header.particles' [speed]='1000'></ngtypewriter>
-        <a class="btn-main-offer">{{lang.header.button}}</a>
+        <a class="btn-main-offer" (click)="mostrarModal(templateModal)">{{lang.header.button}}</a>
     </div>
 </div>
+
+<!-- Modal Eliminar -->
+<ng-template #templateModal>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">{{ lang.header.modaltitle }}</h4>
+    </div>
+    <div class="modal-body">
+        <p style="text-align: center;">{{ lang.header.modalmessage }}</p>
+        <div class="d-flex justify-content-between">
+            <button (click)="downloadCV(2)" class="btn btn-primary" style="margin-left: 20px;">English</button>
+            <button (click)="downloadCV(1)" class="btn btn-success" style="margin-right: 20px;">Español</button>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button (click)="cerrarModal()" type="button" class="btn btn-default">{{ lang.header.modalbtn }}</button>
+    </div>
+</ng-template>

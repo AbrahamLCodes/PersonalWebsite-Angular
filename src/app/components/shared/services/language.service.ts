@@ -48,7 +48,10 @@ export class LanguageService {
       title: "¡Hola! Soy Abraham Luna 👋",
       message: "Desarrollador Full-Stack Web y Móvil",
       particles: ["Apps iOS, Android y PWA", "Páginas y Sistemas Web", "Bases de datos y servidores"],
-      button: "Descarga mi CV"
+      button: "Descarga mi CV",
+      modaltitle: "Descargar CV",
+      modalmessage: "Elige el idioma",
+      modalbtn: "Cancelar"
     },
     about: {
       title: "Acerca de mí",
@@ -235,7 +238,10 @@ export class LanguageService {
       title: "Hey There! I'm Abraham Luna 👋",
       message: "Full-Stack Web y Móvil Developer",
       particles: ["iOS, Android & PWA Apps", "Web pages & web systems", "Databases & Servers"],
-      button: "Download mi CV"
+      button: "Download mi CV",
+      modaltitle: "Download CV",
+      modalmessage: "Choose language",
+      modalbtn: "Cancel"
     },
     about: {
       title: "About me",
