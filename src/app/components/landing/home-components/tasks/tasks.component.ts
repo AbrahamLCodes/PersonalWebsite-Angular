@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from 'src/app/components/shared/services/language.service';
 
 @Component({
   selector: 'app-tasks',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TasksComponent implements OnInit {
 
-  constructor() { }
+  public languageEs: any;
+
+  constructor(
+    private language: LanguageService
+  ) {
+    this.languageEs = language.es;
+  }
 
   ngOnInit(): void {
+  }
+
+  public iconURL(): string {
+    return "https://cdn.lordicon.com/jqeuwnmb.json"
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from 'src/app/components/shared/services/language.service';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +14,13 @@ export class HeaderComponent implements OnInit {
     "Bases de datos y servidores"
   ];
 
-  constructor() { }
+  public languageEs: any;
+
+  constructor(
+    private language: LanguageService
+  ) { 
+    this.languageEs = language.es;  
+  }
 
   public ngOnInit(): void {
   }

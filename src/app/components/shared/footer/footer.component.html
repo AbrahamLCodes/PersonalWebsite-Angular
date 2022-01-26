@@ -4,10 +4,9 @@
             <div class="row">
                 
                 <div class="col-md-6 item text">
-                    <h3>Contácto</h3>
+                    <h3>{{ languageEs.footer.contactLabel }}</h3>
                     <ul>
-                        <li>Correo: abraham11999@hotmail.com</li>
-                        <li>Teléfono: (614)599-60-26</li>
+                        <li *ngFor="let item of languageEs.footer.list">{{ item.label }} {{ item.value }}</li>
                     </ul>
                 </div>
                 <div class="col item social">

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from 'src/app/components/shared/services/language.service';
 
 @Component({
   selector: 'app-stacks',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StacksComponent implements OnInit {
 
-  constructor() { }
+  public languagEs: any;
+
+  constructor(
+    private language: LanguageService
+  ) {
+    this.languagEs = language.es;
+  }
 
   ngOnInit(): void {
   }

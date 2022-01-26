@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from 'src/app/components/shared/services/language.service';
 
 @Component({
   selector: 'app-about',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  public languageEs: any;
+  
+  constructor(
+    private language: LanguageService
+  ) {
+    this.languageEs = language.es;
+  }
 
   ngOnInit(): void {
   }

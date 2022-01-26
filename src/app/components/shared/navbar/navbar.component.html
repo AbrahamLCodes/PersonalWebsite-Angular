@@ -17,20 +17,8 @@
       
       <div [collapse]="isCollapsed" [isAnimated]="true" class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" (click)="scrollTo('INICIO')">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="scrollTo('ABOUT')">Acerca de mí</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="scrollTo('HACER')">¿Qué puedo hacer?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="scrollTo('PORTAFOLIO')">Portafolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="scrollTo('STACKS')">Stacks</a>
+          <li class="nav-item" *ngFor='let item of languageEs.navbar.items '>
+            <a class="nav-link" (click)="scrollTo(item.scrollTo)">{{ item.label }}</a>
           </li>
         </ul>
       </div>

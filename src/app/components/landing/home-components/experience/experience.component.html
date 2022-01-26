@@ -1,13 +1,8 @@
 <div [id]="'PORTAFOLIO'" class="container experience" id = "experience">
-    <h2 style="text-align: center; margin-top: 100px;">Portafolio</h2>
-    <div class="d-flex justify-content-center">
-        <a href="https://play.google.com/store/apps/developer?id=Software+Tizona" target="blank">
-            Haz click aquí para ir a mis Apps en la App Store
-        </a>
-    </div>
-    <div class="d-flex justify-content-center">
-        <a href="https://github.com/AbrahamLCodes" target="blank">
-            Haz click aquí para ir a mi perfil de GitHub
+    <h2 style="text-align: center; margin-top: 100px;">{{ languageEs.portfolio.title }}</h2>
+    <div *ngFor="let item of languageEs.portfolio.links" class="d-flex justify-content-center">
+        <a [href]="item.link" target="blank">
+            {{ item.label }}
         </a>
     </div>
 </div>

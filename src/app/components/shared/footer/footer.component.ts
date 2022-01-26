@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faGooglePlay, faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-footer',
@@ -12,7 +13,13 @@ export class FooterComponent implements OnInit {
   public faGithub = faGithub;
   public faInstagram = faInstagram;
 
-  constructor() { }
+  public languageEs: any;
+
+  constructor(
+    public language: LanguageService
+  ) {
+    this.languageEs = language.es;
+  }
 
   ngOnInit(): void {
   }

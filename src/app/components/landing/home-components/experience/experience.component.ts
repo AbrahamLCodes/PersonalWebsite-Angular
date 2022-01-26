@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
+import { LanguageService } from 'src/app/components/shared/services/language.service';
 
 @Component({
   selector: 'app-experience',
@@ -9,8 +10,13 @@ import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 export class ExperienceComponent implements OnInit {
 
   public faPlayCircle = faPlayCircle;
+  public languageEs: any;
 
-  constructor() { }
+  constructor(
+    private language: LanguageService
+  ) { 
+    this.languageEs = language.es;
+  }
 
   ngOnInit(): void {
   }

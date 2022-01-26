@@ -1,6 +1,6 @@
-import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { AboutComponent } from '../../landing/home-components/about/about.component';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,14 +11,14 @@ export class NavbarComponent implements OnInit {
 
   public faBars = faBars;
   public isCollapsed: boolean = true;
-  public scrollTimeout: any;
-
-  @ViewChild("ABOUT") aboutSection: ElementRef
-  @ViewChild(AboutComponent, { read: ElementRef }) private footerElementRef: ElementRef;
+  public languageEs: any;
+  public languageEn: any
 
   constructor(
-    private renderer: Renderer2
-  ) { }
+    private language: LanguageService
+  ) {
+    this.languageEs = language.es;
+  }
 
   ngOnInit(): void {
   }
