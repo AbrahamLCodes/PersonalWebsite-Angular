@@ -19,7 +19,7 @@ export class LanguageService {
         },
         {
           label: "¿Qué puedo hacer?",
-          scrollTo: "INICIO"
+          scrollTo: "HACER"
         },
         {
           label: "Portafolio",
@@ -189,7 +189,7 @@ export class LanguageService {
           label: "Ionic"
         },
         {
-          image: "../../../../../assets/images/capacitor.png",
+          image: "../../../../../assets/images/capacitor-logo.png",
           label: "Capacitor"
         }
       ]
@@ -209,7 +209,7 @@ export class LanguageService {
         },
         {
           label: "What can i do?",
-          scrollTo: "INICIO"
+          scrollTo: "HACER"
         },
         {
           label: "Portfolio",
@@ -379,7 +379,7 @@ export class LanguageService {
           label: "Ionic"
         },
         {
-          image: "../../../../../assets/images/capacitor.png",
+          image: "../../../../../assets/images/capacitor-logo.png",
           label: "Capacitor"
         }
       ]

@@ -211,7 +211,7 @@ nav ul li {
   position: relative;
 }
 
-.lord-icon-task{
+.lord-icon-task {
   width: 100px !important;
   height: 100px !important;
 }
@@ -308,6 +308,12 @@ nav ul li {
   margin: 20px;
 }
 
+
+@media (min-width: 992px) {
+  .navbar {
+    height: 100px;
+  }
+}
 
 @media (max-width:991px) {
   .footer-dark .item.social {

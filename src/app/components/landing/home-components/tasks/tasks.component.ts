@@ -22,8 +22,4 @@ export class TasksComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public iconURL(): string {
-    return "https://cdn.lordicon.com/jqeuwnmb.json"
-  }
-
 }
