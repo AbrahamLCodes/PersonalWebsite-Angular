@@ -55,8 +55,8 @@ export class LanguageService {
     },
     about: {
       title: "Acerca de mí",
-      message1: "Desarrollador Full-Stack con especialidad en desarrollo de aplicaciones para dispositivos móviles 📱 egresado de Ingeniería Informática por parte del Instituto Tecnológico de Chihuahua II 👨🏼‍🎓",
-      message2: "Cuento con habilidades de comunicación, control de tiempos, trabajo bajo presión, atención/soporte a cliente final, versatilidad y organización para colaborar en proyectos modulares a pequeña o gran escala; autodidácta, adaptable a los cambios y a las tecnologías con las cuales se tenga que trabajar. Reconozco la evolución, la exigencia y la disciplina que requiere la industria global por lo que busco que mi conocimiento sea un activo para tu empresa."
+      message1: "Desarrollador Full-Stack con especialidad en desarrollo de aplicaciones para dispositivos móviles 📱 Soy Ingeniero Informático por parte del Instituto Tecnológico de Chihuahua II 👨🏼‍🎓",
+      message2: "Cuento con habilidades de comunicación, control de tiempos, trabajo bajo presión, atención/soporte a cliente final, versatilidad y organización para colaborar en proyectos modulares a pequeña o gran escala; autodidácta, adaptable a los cambios y a las tecnologías con las cuales se tenga que trabajar. Reconozco la evolución, la exigencia y la disciplina que requiere la industria global por lo que busco que mi conocimiento sea un activo para ti."
     },
     services: {
       title: "¿Qué puedo hacer?",
@@ -97,100 +97,164 @@ export class LanguageService {
       frontend: [
         {
           image: "../../../../../assets/images/angular-logo.png",
-          label: "Angular"
+          label: "Angular",
+          link: "https://angular.io/",
         },
         {
           image:"../../../../../assets/images/ngrx-logo.svg",
-          label: "NgRx"
+          label: "NgRx",
+          link: "https://ngrx.io/"
+        },
+        {
+          image:"../../../../../assets/images/jquery-logo.png",
+          label: "JQuery",
+          link: "https://jquery.com/"
         },
         {
           image:"../../../../../assets/images/bootstrap-logo.svg",
-          label: "Bootstrap"
+          label: "Bootstrap",
+          link: "https://getbootstrap.com/"
         },
         {
           image:"../../../../../assets/images/ts-logo.png",
-          label: "TypeScript"
+          label: "TypeScript",
+          link: "https://www.typescriptlang.org/"
         }
       ],
       backend: [
         {
-          image: "../../../../../assets/images/node-logo.png",
-          label: "NodeJS"
+          image: "../../../../../assets/svg/strapi-logo.svg",
+          label: "Strapi",
+          link: "https://strapi.io/"
         },
         {
-          image: "../../../../../assets/images/sequilize-logo.png",
-          label: "Sequilize"
+          image: "../../../../../assets/svg/nest-logo.svg",
+          label: "NestJS",
+          link: "https://nestjs.com/"
         },
+        {
+          image: "../../../../../assets/images/prisma-logo.png",
+          label: "Prisma",
+          link: "https://www.prisma.io/"
+        },
+        {
+          image: "../../../../../assets/svg/dotnet-logo.svg",
+          label: ".Net",
+          link: "https://dotnet.microsoft.com/"
+        }
+      ],
+      dataLabel: "Bases de Datos",
+      data: [
         {
           image: "../../../../../assets/images/mysql-logo.png",
-          label: "MySQL"
+          label: "MySQL",
+          link: "https://www.mysql.com/"
+        },
+        {
+          image: "../../../../../assets/svg/sql-logo.svg",
+          label: "SQL Server",
+          link: "https://www.microsoft.com/en-us/sql-server/"
+        },
+        {
+          image: "../../../../../assets/svg/sqlite-logo.svg",
+          label: "SQLite",
+          link: "https://www.sqlite.org/index.html"
+        },
+        {
+          image: "../../../../../assets/svg/mongo-logo.svg",
+          label: "Mongo",
+          link: "https://www.mongodb.com/"
         }
       ],
       serverslabel: "Servidores",
       servers: [
         {
           image: "../../../../../assets/images/nginx-logo.png",
-          label: "NGINX"
+          label: "NGINX",
+          link: "https://www.nginx.com/"
+        },
+        {
+          image: "../../../../../assets/svg/iis-logo.svg",
+          label: "MS IIS",
+          link: "https://www.iis.net/"
         },
         {
           image: "../../../../../assets/images/nginxproxy-logo.png",
-          label: "Proxy Manager"
+          label: "Proxy Manager",
+          link: "https://nginxproxymanager.com/"
         },
         {
           image: "../../../../../assets/images/debian-logo.png",
-          label: "Debian"
+          label: "Debian",
+          link: "https://www.debian.org/index.html"
         },
         {
           image: "../../../../../assets/images/docker-logo.png",
-          label: "Docker"
+          label: "Docker",
+          link: "https://www.docker.com/"
         }
       ],
       mobilelabel: "Mi Stack de tecnologías móviles",
       android: [
         {
           image: "../../../../../assets/images/kotlin-logo.png",
-          label: "Kotlin"
+          label: "Kotlin",
+          link: "https://kotlinlang.org/"
         },
         {
           image: "../../../../../assets/images/java-logo.png",
-          label: "Java"
+          label: "Java",
+          link: "https://www.java.com/en/"
         },
         {
           image: "../../../../../assets/images/as-logo.png",
-          label: "Android Studio"
+          label: "Android Studio",
+          link: "https://developer.android.com/studio"
         }
       ],
       ios: [
         {
           image: "../../../../../assets/images/swift-logo.png",
-          label: "Swift"
+          label: "Swift",
+          link: "https://www.swift.org/"
         },
         {
           image: "../../../../../assets/images/swiftui-logo.png",
-          label: "SwiftUI"
+          label: "SwiftUI",
+          link: "https://developer.apple.com/xcode/swiftui/"
+        },
+        {
+          image: "../../../../../assets/images/swiftui-logo.png",
+          label: "UIKit",
+          link: "https://developer.apple.com/documentation/uikit"
         },
         {
           image: "../../../../../assets/images/xcode-logo.png",
-          label: "XCode"
+          label: "XCode",
+          link: "https://developer.apple.com/xcode/"
         }
       ],
       hibridlabel: "Híbrido",
       hibryd: [
         {
           image: "../../../../../assets/images/angular-logo.png",
-          label: "Angular"
+          label: "Angular",
+          link: "https://angular.io/"
         },
         {
           image: "../../../../../assets/images/ngrx-logo.svg",
-          label: "NgRx"
+          label: "NgRx",
+          link: "https://ngrx.io/"
         },
         {
           image: "../../../../../assets/images/ionic-logo.png",
-          label: "Ionic"
+          label: "Ionic",
+          link: "https://ionicframework.com/"
         },
         {
           image: "../../../../../assets/images/capacitor-logo.png",
-          label: "Capacitor"
+          label: "Capacitor",
+          link: "https://capacitorjs.com/"
         }
       ]
     }
@@ -245,7 +309,7 @@ export class LanguageService {
     },
     about: {
       title: "About me",
-      message1: "Full-Stack developer specializing in application development for mobile devices 📱 Computer Engineering graduated from the Technological Institute of Chihuahua II 👨🏼‍🎓",
+      message1: "Full-Stack developer specializing in app development for mobile devices 📱 Software Engineer graduated from the Technological Institute of Chihuahua II 👨🏼‍🎓",
       message2: "I have communication skills, time control, work under pressure, customer service/support, versatility and organization to collaborate on small or large-scale modular projects; Self-taught, adaptable to changes and technologies with which you have to work. I recognize the evolution, demand and discipline that the global industry requires, so I want my knowledge to be an asset for your company."
     },
     services: {
@@ -287,100 +351,164 @@ export class LanguageService {
       frontend: [
         {
           image: "../../../../../assets/images/angular-logo.png",
-          label: "Angular"
+          label: "Angular",
+          link: "https://angular.io/",
         },
         {
           image:"../../../../../assets/images/ngrx-logo.svg",
-          label: "NgRx"
+          label: "NgRx",
+          link: "https://ngrx.io/"
+        },
+        {
+          image:"../../../../../assets/images/jquery-logo.png",
+          label: "JQuery",
+          link: "https://jquery.com/"
         },
         {
           image:"../../../../../assets/images/bootstrap-logo.svg",
-          label: "Bootstrap"
+          label: "Bootstrap",
+          link: "https://getbootstrap.com/"
         },
         {
           image:"../../../../../assets/images/ts-logo.png",
-          label: "TypeScript"
+          label: "TypeScript",
+          link: "https://www.typescriptlang.org/"
         }
       ],
       backend: [
         {
-          image: "../../../../../assets/images/node-logo.png",
-          label: "NodeJS"
+          image: "../../../../../assets/svg/strapi-logo.svg",
+          label: "Strapi",
+          link: "https://strapi.io/"
         },
         {
-          image: "../../../../../assets/images/sequilize-logo.png",
-          label: "Sequilize"
+          image: "../../../../../assets/svg/nest-logo.svg",
+          label: "NestJS",
+          link: "https://nestjs.com/"
         },
+        {
+          image: "../../../../../assets/images/prisma-logo.png",
+          label: "Prisma",
+          link: "https://www.prisma.io/"
+        },
+        {
+          image: "../../../../../assets/svg/dotnet-logo.svg",
+          label: ".Net",
+          link: "https://dotnet.microsoft.com/"
+        }
+      ],
+      dataLabel: "Databases",
+      data: [
         {
           image: "../../../../../assets/images/mysql-logo.png",
-          label: "MySQL"
+          label: "MySQL",
+          link: "https://www.mysql.com/"
+        },
+        {
+          image: "../../../../../assets/svg/sql-logo.svg",
+          label: "SQL Server",
+          link: "https://www.microsoft.com/en-us/sql-server/"
+        },
+        {
+          image: "../../../../../assets/svg/sqlite-logo.svg",
+          label: "SQLite",
+          link: "https://www.sqlite.org/index.html"
+        },
+        {
+          image: "../../../../../assets/svg/mongo-logo.svg",
+          label: "Mongo",
+          link: "https://www.mongodb.com/"
         }
       ],
       serverslabel: "Servers",
       servers: [
         {
           image: "../../../../../assets/images/nginx-logo.png",
-          label: "NGINX"
+          label: "NGINX",
+          link: "https://www.nginx.com/"
+        },
+        {
+          image: "../../../../../assets/svg/iis-logo.svg",
+          label: "MS IIS",
+          link: "https://www.iis.net/"
         },
         {
           image: "../../../../../assets/images/nginxproxy-logo.png",
-          label: "Proxy Manager"
+          label: "Proxy Manager",
+          link: "https://nginxproxymanager.com/"
         },
         {
           image: "../../../../../assets/images/debian-logo.png",
-          label: "Debian"
+          label: "Debian",
+          link: "https://www.debian.org/index.html"
         },
         {
           image: "../../../../../assets/images/docker-logo.png",
-          label: "Docker"
+          label: "Docker",
+          link: "https://www.docker.com/"
         }
       ],
       mobilelabel: "My Mobile Technologies Stack",
       android: [
         {
           image: "../../../../../assets/images/kotlin-logo.png",
-          label: "Kotlin"
+          label: "Kotlin",
+          link: "https://kotlinlang.org/"
         },
         {
           image: "../../../../../assets/images/java-logo.png",
-          label: "Java"
+          label: "Java",
+          link: "https://www.java.com/en/"
         },
         {
           image: "../../../../../assets/images/as-logo.png",
-          label: "Android Studio"
+          label: "Android Studio",
+          link: "https://developer.android.com/studio"
         }
       ],
       ios: [
         {
           image: "../../../../../assets/images/swift-logo.png",
-          label: "Swift"
+          label: "Swift",
+          link: "https://www.swift.org/"
         },
         {
           image: "../../../../../assets/images/swiftui-logo.png",
-          label: "SwiftUI"
+          label: "SwiftUI",
+          link: "https://developer.apple.com/xcode/swiftui/"
+        },
+        {
+          image: "../../../../../assets/images/swiftui-logo.png",
+          label: "UIKit",
+          link: "https://developer.apple.com/documentation/uikit"
         },
         {
           image: "../../../../../assets/images/xcode-logo.png",
-          label: "XCode"
+          label: "XCode",
+          link: "https://developer.apple.com/xcode/"
         }
       ],
       hibridlabel: "Hybrid",
       hibryd: [
         {
           image: "../../../../../assets/images/angular-logo.png",
-          label: "Angular"
+          label: "Angular",
+          link: "https://angular.io/"
         },
         {
           image: "../../../../../assets/images/ngrx-logo.svg",
-          label: "NgRx"
+          label: "NgRx",
+          link: "https://ngrx.io/"
         },
         {
           image: "../../../../../assets/images/ionic-logo.png",
-          label: "Ionic"
+          label: "Ionic",
+          link: "https://ionicframework.com/"
         },
         {
           image: "../../../../../assets/images/capacitor-logo.png",
-          label: "Capacitor"
+          label: "Capacitor",
+          link: "https://capacitorjs.com/"
         }
       ]
     }
